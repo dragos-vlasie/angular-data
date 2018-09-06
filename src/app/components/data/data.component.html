@@ -8,9 +8,18 @@
   </div>
   <div class="slide slide2"><a name="functional-change"></a>
     <div class="example example-2 no-padding">
-      <div class="switch {{is}}">
-        <div class="on">{{status}}</div>
-        <div class="off">{{status}}</div>
+      <div class="switch" [class.is-transitioned]="bathroomStatus2">
+        <div class="on">{{bathroom2Status}}</div>
+        <div class="off">{{bathroom2Status}}</div>
+        <div class="handle"></div>
+      </div>
+    </div>
+  </div>
+  <div class="slide slide2"><a name="functional-change"></a>
+    <div class="example example-2 no-padding">
+      <div class="switch" [class.is-transitioned]="bathroomStatus3">
+        <div class="on">{{bathroom3Status}}</div>
+        <div class="off">{{bathroom3Status}}</div>
         <div class="handle"></div>
       </div>
     </div>

@@ -9,12 +9,10 @@ export class DataService {
   constructor(public http:Http) {
     console.log('Data service connected');
    }
-   
+
   getPosts(){
-
-    return this.http.get(`http://192.168.11.31:1880/bathroom/3`)
+    return this.http.get(`http://192.168.11.86:1880/bathroomstatus`)
         .map(res => res.json());
-
 }
 
 }
